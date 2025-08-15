@@ -5,20 +5,30 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Neibank</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
 </head>
 <body>
    <header>
     <h1>NeiBank</h1>
         <nav>
-            <div class="inf">
-           <div class="total"><p>Total <br>emprestado </p> <p style="color: 
-           white; ">R$0,00</p></div>
-           <div class="lucro"><p>Lucro </p> <p  style="color: 
-           white; "> R$0,00</p></div>
-           <div class="pendentes"><p>Pendentes </p> <p  style="color: 
-           white; "> R$0,00</p></div>
-           
-           </div>
+         <div class="inf">
+             <a href="#" class="total" >
+                 <i class="fa-solid fa-calendar-days"></i>
+                <h3>Total Emprestado</h3> 
+                <p style="color:  white; ">R$0,00</p>
+            </a>
+            <a href="#"  class="lucro"> 
+                <i class="fa-solid fa-sack-dollar"></i>
+                <h3>Lucro</h3> 
+                <p style="color: white; "> R$0,00</p>
+           </a>
+           <a href="#" class="pendentes"> 
+            <i class="fa-solid fa-circle-xmark"></i>
+                <h3>Pendentes</h3> 
+                <p style="color: white; "> R$0,00</p>
+           </a>
+        </div>
 
           
     </nav>
@@ -26,12 +36,25 @@
     
 <main>
     <section class="menu">
-    <input type="button" value="Cadastrar novo empréstimo              >">
-    <input type="button" value="Visualizar gráficos                             >">
-    <input type="button" value="Ver pendências                                  >">
+    <a href="#">
+        <i class="fa-solid fa-plus"></i>
+         <p>Cadastrar novo empréstimo</p>
+        </a>
+    <a href="#"> 
+        <i class="fa-solid fa-chart-line"></i>
+        <p>Visualizar gráficos</p>
+    </a>
+    <a href="#">
+         <i class="fa-solid fa-list"></i>
+          <p>Ver pendências</p>
+        </a>
     </section>
 
-    <section class="home"> <input type="button" value="Home >"></section>
+    <section class="home">
+          <a href=""> <i class="fa-solid fa-house"></i>
+            <p>Home</p>
+        </a>
+    </section>
 </main>
 </body>
 </html>
