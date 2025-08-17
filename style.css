@@ -20,7 +20,7 @@ header{
 h1{
 display: flex;
 justify-content: center;
-font-size: 60px;
+font-size: 35px;
 text-shadow: 1px 1px 1px rgb(24, 24, 24);
 }
 nav{
@@ -31,7 +31,10 @@ nav{
 
 .inf{
     display: flex;
+    flex-wrap: wrap;
 }
+
+
 .inf>a:hover{
    border: 1px solid rgba(255, 218, 155, 0.964);
     transition: 0.4s;
@@ -39,7 +42,7 @@ nav{
 }
 
 i{
-    font-size:30px ;
+    font-size:18px ;
     color: #CAAB66;
     margin-bottom: 7px;
 }
@@ -48,14 +51,23 @@ h3{
     display: flex;
     text-align: center;
     font-family: Arial, Helvetica, sans-serif;
-   font-size: 21px;
-   padding: 5px;
+   font-size: 13px;
+   padding: 4px;
    padding-bottom: 8px;
 }
 
 a{
+   
     text-decoration: none;
     color: #CAAB66;
+    background-color:#141414;
+    color: #CAAB66;
+    display: flex;
+  font-size: 17px;
+   border-radius: 12px;
+   border: 1px solid rgba(235, 204, 149, 0.129);
+   margin: 10px;
+   padding: 14px;
 }
 
 header P{
@@ -63,16 +75,17 @@ header P{
     display: flex;
     text-align: center;
     font-family: Arial, Helvetica, sans-serif;
-   font-size: 38px;
+   font-size: 30px;
    padding: 5px;
 
 }
 .total{
+     width: 180px;
+     height: 230px;
     flex-direction: column;
     display: flex;
     background-color: #141414;
     padding: 10px;
-    height: 300px;
     margin: 10px;
     border-radius: 12px;
     align-items: center;
@@ -81,11 +94,12 @@ header P{
 }
 
 .lucro{
+     width: 180px;
+     height: 230px;
     flex-direction: column;
     display: flex;
  background-color: #141414;
     padding: 10px 45px 0px 45px;
-    height: 300px;
     margin: 10px;
     border-radius: 12px;
     align-items: center;
@@ -95,51 +109,32 @@ header P{
 
 
 .pendentes{
+     width: 180px;
+    height: 230px;
     flex-direction: column;
     display: flex;
 background-color: #141414;
  padding: 10px 35px 0px 35px;
- height: 300px;
   margin: 10px;
   border-radius: 12px;
   align-items: center;
   justify-content:center;
   border: 1px solid rgba(235, 204, 149, 0.129);
-   box-shadow: 3px 3px 3px #0C0C0C 3px 3px 3px;
+   
 }
 
 main{
     display: flex;
+    flex-wrap: wrap;
     flex-direction: column;
    align-items: center;
 }
 
 .menu>a{
+    width: 580px;
     display: flex;
     align-items: center;
-    width: 680px;
-    padding: 10px;
-}
-
-a{
-    background-color:#141414;
-    color: #CAAB66;
-    display: flex;
-  font-size: 30px;
-   border-radius: 15px;
-   height: 100px;
-   border: 1px solid rgba(235, 204, 149, 0.129);
-   margin: 10px;
-   padding: 14px;
-}
-
-.home>a{
-    display: flex;
-    align-items: center;
-    width: 680px;
-    border-radius: 10px;
-    margin-top: 0px;
-}
+    padding: 8px}
 
 
   a:hover{
@@ -151,4 +146,70 @@ a{
 main p{
     display: flex;
     padding: 14px;
+}
+
+
+@media (max-width: 1024px) {
+  h1 {
+    font-size: 40px;
+  }
+
+  .inf {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .inf a {
+    width: 45%;   /* 2 cards por linha */
+    height: auto;
+    margin: 10px;
+    padding: 20px;
+  }
+
+  .menu > a{
+    width: 90%;   /* botões ocupam mais da tela */
+    justify-content: center;
+  }
+  .menu > a > p{
+    white-space: nowrap;
+  }
+}
+
+
+/* Celular (até 768px) */
+@media (max-width: 768px) {
+  h1 {
+    font-size: 32px;
+  }
+
+  .inf {
+    flex-direction: column; /* empilha os cards */
+    align-items: center;
+  }
+
+  .inf a {
+    width: 90%;   /* ocupa quase a tela toda */
+    height: auto; /* altura automática */
+    margin: 10px 0;
+    padding: 20px;
+  }
+
+  h3 {
+    font-size: 18px;
+  }
+
+  header p {
+    font-size: 22px;
+  }
+
+  .menu > a{
+    width: 95%;
+    height: auto;
+    padding: 20px;
+    font-size: 22px;
+  }
+
+  i {
+    font-size: 24px; /* ícones menores */
+  }
 }
