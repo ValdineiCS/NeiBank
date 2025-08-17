@@ -1,8 +1,8 @@
 # NeiBank
 # 💳 NeiBank
 
-O **NeiBank** é um sistema simples para controle de microcréditos pessoais.  
-Foi desenvolvido como projeto de prática em **HTML, CSS e JavaScript**, com foco em responsividade e boas práticas de organização de código.  
+O **NeiBank** é um sistema simples para controle de microcréditos pessoais em desenvolvimento.  
+Foi desenvolvido como projeto de prática em **HTML, CSS e está sendo adicionado JavaScript**, com foco em responsividade e boas práticas de organização de código.  
 
 ---
 
@@ -24,16 +24,16 @@ Foi desenvolvido como projeto de prática em **HTML, CSS e JavaScript**, com foc
 ## 📸 Demonstração
 
 ### Dashboard
-![Dashboard](Imagens/Captura%20de%20tela%202025-08-17%20195853.jpg)
+![Dashboard](imagens%20readme/dashboard.jpg)
 
 ### Cadastro de Empréstimo
-![Cadastro](link-da-screenshot-aqui)
+![Cadastro](imagens%20readme/cadastrar%20cliente.jpg)
 
 ### Distribuição em Gráficos
-![Gráfico](link-da-screenshot-aqui)
+![Gráfico](imagens%20readme/distribuicao%20em%20grafico.jpg)
 
 ### Pendências de Pagamento
-![Pendências](link-da-screenshot-aqui)
+![Pendências](imagens%20readme/pendencias.jpg)
 
 ---
 
@@ -52,4 +52,5 @@ Este projeto foi criado como exercício prático para consolidar o aprendizado e
 
 ---
 
-✍️ Desenvolvido por [Valdinei Conceição](https://github.com/valdineics)  
+✍️ Desenvolvido por [Valdinei Conceição](https://github.com/valdineics)
+Link do projeto para visualiza (https://valdineics.github.io/NeiBank)
