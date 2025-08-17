@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cadastrar Empréstimo - NeiBank</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+  <style>
+h2{
+    color: #CAAB66;
+    padding: 15px;
+}
+
+label{
+    color:#CAAB66;
+    padding: 10px;
+}
+
+input{
+    height: 25px;
+    border-radius: 6px;
+    text-align: center;
+}
+.home-btn{
+    padding: 10px;
+}
+    
+  </style>
+</head>
+<body>
+  <header>
+    <h1>NeiBank</h1>
+  </header>
+
+  <main>
+    <h2>Cadastrar novo empréstimo</h2>
+
+    <form class="form-emprestimo">
+      <label>Nome do cliente</label>
+      <input type="text" placeholder="Ex: João Silva">
+
+      <label>Valor emprestado</label>
+      <input type="number" placeholder="R$ 0,00">
+
+      <label>Data de vencimento</label>
+      <input type="date">
+
+      <button type="submit">Salvar</button>
+    </form>
+
+    <div class="home-btn">
+      <a href="index.html"><i class="fa-solid fa-house"></i> Voltar ao Dashboard</a>
+    </div>
+  </main>
+</body>
+</html>
