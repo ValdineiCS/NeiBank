@@ -15,20 +15,37 @@ h2{
 
 form{
     display: flex;
+    text-align: center;
+    align-items: center;
 }
 
 label{
     color:#CAAB66;
     padding: 10px;
+    align-items: center;
 }
 
 input{
     height: 25px;
     border-radius: 6px;
     text-align: center;
+
 }
 .home-btn{
     padding: 10px;
+    
+}
+
+.fim{
+    
+}
+
+button{
+    color: #CAAB66;
+    background-color:rgba(235, 204, 149, 0.129);
+    border-radius: 6px;
+    width: 55px;
+    height: 20px;
 }
 
 @media(max-width:1030px){
@@ -87,7 +104,7 @@ input{
       <input type="number" placeholder="R$ 0,00">
 
       
-      <label>Data de vencimento</label>
+      <label class="fim">Data de vencimento</label>
       <div class="salvar">
       <input type="date">
       <button type="submit">Salvar</button>
