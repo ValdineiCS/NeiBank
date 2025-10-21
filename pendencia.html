@@ -31,10 +31,40 @@ input{
 img{
       width: 200px;
 }
-    
+    .card-pendente {
+    display: flex;
+    justify-content: space-between; /* Espaça os elementos horizontalmente */
+    align-items: center;
+    border: 1px solid #CAAB66;
+    border-radius: 6px;
+    padding: 10px 15px;
+    margin-bottom: 10px;
+    background-color: rgba(0,0,0,0.6);
+    color: white;
+    gap: 15px; /* Espaço entre os itens */
+}
+
+.card-pendente p {
+    margin: 0;
+}
+
+.card-pendente button.pago {
+    padding: 5px 10px;
+    background-color: #CAAB66;
+    color: black;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+.card-pendente button.pago:hover {
+    background-color: #b58c50;
+}
+
   </style>
 </head>
-<body>
+<body class="pendencia">
   <header>
     <h1>NeiBank</h1>
   </header>
@@ -43,7 +73,7 @@ img{
     <h2>Pendente de pagamento</h2>
 
     <div class="pendente">
-        <img src="Imagens/Captura de tela 2025-08-17 200521.jpg" alt="">
+        
     </div>
 
     <div class="home-btn">
@@ -51,6 +81,6 @@ img{
     </div>
   </main>
 
-  
+  <script src="script.js"></script>
 </body>
 </html>

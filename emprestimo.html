@@ -109,7 +109,7 @@ button{
     
   </style>
 </head>
-<body>
+<body class="emprestimo">
   <header>
     <h1>NeiBank</h1>
   </header>
@@ -125,9 +125,13 @@ button{
       <input type="number" placeholder="R$ 0,00">
 
       
-      <label class="fim">Data de vencimento</label>
+      <label class="fim">juros (%)</label>
       <div class="salvar">
-      <input type="date">
+      <select name="" id="juros">
+        <option value="10">10%</option>
+        <option value="20">20%</option>
+        <option value="30">30%</option>
+      </select>
       <button type="submit" id="salvar">Salvar</button>
       </div>
     </form>

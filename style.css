@@ -130,6 +130,26 @@ main{
    align-items: center;
 }
 
+.historico-btn {
+  text-align: center;
+  margin-top: 20px;
+}
+
+.historico-btn a {
+  background-color: #CAAB66;
+  color: #000;
+  padding: 10px 20px;
+  border-radius: 6px;
+  text-decoration: none;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+.historico-btn a:hover {
+  background-color: #d8c07a;
+  transform: scale(1.05);
+}
+
 .menu>a{
     width: 580px;
     display: flex;
@@ -147,6 +167,7 @@ main p{
     display: flex;
     padding: 14px;
 }
+
 
 
 @media (max-width: 1024px) {
