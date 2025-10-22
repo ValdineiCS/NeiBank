@@ -64,6 +64,7 @@ container.innerHTML="";
 
 if(pendentes.length===0){
     container.innerHTML="<p>Não há empréstimos pendentes</p>";
+    container.style.color="#CAAB66"
 }else{
     pendentes.forEach(emp=>{
         const div=document.createElement("div");
@@ -147,7 +148,7 @@ else if(bodyClass.contains("graficos")){
 else if (bodyClass.contains("historico")) {
   const emprestimos = JSON.parse(localStorage.getItem("emprestimos")) || [];
   const pagos = emprestimos.filter(emp => emp.status === "pago");
-  const container = document.querySelector(".historico");
+  const container = document.querySelector(".historico-container");
 
   container.innerHTML = "";
 
@@ -156,7 +157,7 @@ else if (bodyClass.contains("historico")) {
   } else {
     pagos.forEach(emp => {
       const div = document.createElement("div");
-      div.classList.add("card-historico");
+      div.classList.add("card-historico-container");
       div.innerHTML = `
         <p><strong>Cliente:</strong> ${emp.nome}</p>
         <p><strong>Valor:</strong> R$${emp.valor.toFixed(2)}</p>
